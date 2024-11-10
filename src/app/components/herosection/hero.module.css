@@ -1,0 +1,118 @@
+/* Make the hero section take up full height */
+/* Hero Section - Full height with background */
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('/background.webp') center center/cover no-repeat; /* Background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Glassmorphism effect for the overlay */
+  .overlay {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur the background behind the overlay */
+    border-radius: 20px; /* Rounded corners */
+    padding: 40px 60px; /* Add some padding to the content */
+    text-align: center; /* Center the text and button */
+    max-width: 80%; /* Limit the width of the content */
+    width: 70%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a soft shadow for depth */
+    /* Add a max-height to ensure overlay content fits on all screen sizes */
+    max-height: 80%; 
+  }
+  
+  /* Heading styling */
+  .overlay h1 {
+    font-size: 4rem; /* Large text for the title */
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Space between heading and button */
+    font-family: 'Arial', sans-serif; /* Custom font family */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Add subtle text shadow */
+  }
+  
+  /* Button styling */
+  .bookNow {
+    background-color: #ff5e62; /* Red color */
+    color: white;
+    font-size: 1.5rem; /* Slightly larger font for the button */
+    padding: 15px 30px; /* Add some padding for a large button */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .bookNow:hover {
+    background-color: #ff9966; /* Slight color change on hover */
+    transform: translateY(-4px); /* Lift the button slightly */
+  }
+  
+  .bookNow:active {
+    transform: translateY(2px); /* Add slight press effect when clicked */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) { /* Tablet and smaller */
+    .overlay {
+      padding: 30px 40px; /* Reduce padding for smaller screens */
+      width: 80%; /* Increase width slightly */
+      max-width: 90%; /* Ensure it doesn't overflow */
+    }
+  
+    .overlay h1 {
+      font-size: 3rem; /* Reduce heading size on smaller screens */
+      letter-spacing: 1px; /* Decrease letter-spacing */
+      margin-bottom: 15px; /* Reduce space between heading and button */
+    }
+  
+    .bookNow {
+      font-size: 1.3rem; /* Slightly smaller button text */
+      padding: 12px 25px; /* Reduce padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) { /* Mobile devices */
+    .overlay {
+      padding: 20px 30px; /* Further reduce padding */
+      width: 85%; /* Take more space for small screens */
+      max-width: 95%; /* Allow for more width on small screens */
+    }
+  
+    .overlay h1 {
+      font-size: 2.5rem; /* Make the heading smaller */
+      letter-spacing: 0; /* Remove letter-spacing */
+      margin-bottom: 10px; /* Reduce space between heading and button */
+    }
+  
+    .bookNow {
+      font-size: 1.2rem; /* Slightly smaller button text */
+      padding: 10px 20px; /* Adjust padding for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) { /* Small mobile screens */
+    .overlay {
+      padding: 15px 20px; /* Further reduce padding */
+      width: 90%; /* Increase width for very small screens */
+      max-width: 100%; /* Ensure it fits the screen */
+    }
+  
+    .overlay h1 {
+      font-size: 2rem; /* Make the heading even smaller */
+      letter-spacing: 0; /* No letter-spacing for mobile */
+      margin-bottom: 8px; /* Adjust margin for small screens */
+    }
+  
+    .bookNow {
+      font-size: 1.1rem; /* Even smaller button text */
+      padding: 8px 15px; /* Reduce button padding */
+    }
+  }
+  

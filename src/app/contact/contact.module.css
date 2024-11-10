@@ -1,0 +1,112 @@
+/* Contact.module.css */
+
+.container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(to bottom right, #0c6068, #99e8c6); /* Beautiful gradient */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Header Section */
+  .header {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #0056a1;
+  }
+  
+  .header p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Form Section */
+  .formSection {
+    margin: 40px 0;
+  }
+  
+  .formSection h2 {
+    font-size: 2rem;
+    color: #0056a1;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submitButton {
+    background-color: #0056a1;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #003d73;
+  }
+  
+  /* Contact Information Section */
+  .contactInfo {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .contactInfo h2 {
+    font-size: 2rem;
+    color: #0056a1;
+    margin-bottom: 10px;
+  }
+  
+  .contactInfo p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2rem;
+    }
+  
+    .formSection h2,
+    .contactInfo h2 {
+      font-size: 1.8rem;
+    }
+  
+    .submitButton {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  

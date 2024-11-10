@@ -1,0 +1,111 @@
+/* About.module.css */
+
+.container {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #0c6068, #99e8c6); /* Beautiful gradient */
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    background: url('/about.webp') center/cover;
+    color: #fff;
+    padding: 80px 20px;
+    border-radius: 8px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* Info Section */
+  .infoSection, .missionSection, .testimonials, .contactSection {
+    margin: 40px 0;
+  }
+  
+  .infoSection h2, .missionSection h2, .testimonials h2, .contactSection h2 {
+    font-size: 2rem;
+    color: #0056a1;
+    margin-bottom: 15px;
+  }
+  
+  /* Mission Section */
+  .missionSection p, .infoSection p {
+    line-height: 1.6;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    text-align: center;
+  }
+  
+  .testimonialCard {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+  }
+  
+  .testimonialCard p {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonialCard span {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Contact Section */
+  .contactSection {
+    text-align: center;
+  }
+  
+  .contactSection p {
+    margin: 10px 0 20px;
+  }
+  
+  .contactButton {
+    background-color: #0056a1;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contactButton:hover {
+    background-color: #003d73;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .infoSection h2, .missionSection h2, .testimonials h2, .contactSection h2 {
+      font-size: 1.8rem;
+    }
+  
+    .contactButton {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  

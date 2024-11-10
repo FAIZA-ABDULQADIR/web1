@@ -1,0 +1,130 @@
+/* Navbar.module.css */
+
+/* Main navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  background: linear-gradient(135deg, #032657, #5385e2); /* Gradient background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 10;
+  font-size: 16px;
+}
+
+
+
+/* Logo styles */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Desktop menu links */
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgb(16, 16, 16);
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for nav links */
+.navLink:hover {
+  color: #ffeb3b; /* Yellow color on hover */
+  transform: scale(1.1); /* Slightly grow the link on hover */
+}
+
+/* Mobile menu styles */
+.hamburgerButton {
+  display: none;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.hamburgerIcon {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+}
+
+.hamburgerIcon::before,
+.hamburgerIcon::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.hamburgerIcon::before {
+  top: -8px;
+}
+
+.hamburgerIcon::after {
+  top: 8px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navLinks.showMenu {
+    display: block;
+  }
+
+  .navLinks li {
+    padding: 15px 0;
+  }
+
+  .hamburgerButton {
+    display: block;
+  }
+
+  /* Transform hamburger icon into a close icon when menu is open */
+  .hamburgerIcon::before {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburgerIcon::after {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Desktop menu styles */
+@media (min-width: 768px) {
+  .navLinks {
+    display: flex;
+  }
+
+  .hamburgerButton {
+    display: none;
+  }
+}
