@@ -1,6 +1,5 @@
 import styles from './tour.module.css';
 import Link from 'next/link';
-import Image from 'next/image';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/footer';
 

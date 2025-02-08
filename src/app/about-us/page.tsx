@@ -1,13 +1,12 @@
 import styles from './about.module.css';
-import Link from 'next/link';
-import Image from 'next/image';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/footer';
 
 export default function About() {
   return (
     <div className={styles.container}>
-        <Navbar/>
+      <Navbar />
+      
       {/* Hero Section */}
       <section className={styles.hero}>
         <h1>About Us</h1>
@@ -37,11 +36,11 @@ export default function About() {
       <section className={styles.testimonials}>
         <h2>What Our Travelers Say</h2>
         <div className={styles.testimonialCard}>
-          <p>"Our trip was beyond incredible! Everything was organized perfectly, and we had the time of our lives!"</p>
+          <p>&quot;Our trip was beyond incredible! Everything was organized perfectly, and we had the time of our lives!&quot;</p>
           <span>— Sarah J.</span>
         </div>
         <div className={styles.testimonialCard}>
-          <p>"An unforgettable journey. The guides were amazing, and the itinerary was fantastic!"</p>
+          <p>&quot;An unforgettable journey. The guides were amazing, and the itinerary was fantastic!&quot;</p>
           <span>— Michael R.</span>
         </div>
       </section>
@@ -52,7 +51,8 @@ export default function About() {
         <p>Contact us today and let us plan the journey of your dreams.</p>
         <button className={styles.contactButton}>Contact Us</button>
       </section>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 }
